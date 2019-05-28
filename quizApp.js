@@ -28,7 +28,7 @@ function Question(title,answersArray,rightAnswer,difficulty){
 //Create a quizUsers Array which is going to hold all of our users.
 
   //code here
-
+var quizUsers = [];
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
