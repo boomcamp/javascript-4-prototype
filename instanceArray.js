@@ -44,6 +44,6 @@ users.push(koji);
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name.
 
-for (var x of user) {
+for (var x of users) {
     console.log(x)
 }

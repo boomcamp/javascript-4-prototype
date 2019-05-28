@@ -2,8 +2,6 @@
 
 //Add a reverse method to the String 'class' so that every instance of String can call reverse and reverse itself.
 
-Person.prototype.reverseMe = function(name) {
-    var array = this.name;
-    array = array.split("").reverse().join("");
-    console.log(array);
+String.prototype.reverse = function() {
+    return this.split("").reverse().join("");
 }
