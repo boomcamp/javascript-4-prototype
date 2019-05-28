@@ -25,7 +25,11 @@ console.log('Aodhan\'s information is ');
 //Console.log all of Aodhan information
 
   //code here
-
+for(a of users){
+  if(a.name == 'Aodhan'){ 
+  console.log(a);
+  }
+}
 console.log('Oscar\'s information is ');
 //Now console.log all of Oscars information
 
