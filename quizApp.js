@@ -50,9 +50,9 @@
 //Fill in the rest of the required data as you see appropriate.
 
   //code here
-  var question1 = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?');
-  var question2 = new Question('T/F: JavaScript is just a scripting version of Java');
-  var question3 = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value");
+  var question1 = new Question('T/F: Inheritance is achieved in JavaScript through Prototypes?',['T','F'],'T', 'easy');
+  var question2 = new Question('T/F: JavaScript is just a scripting version of Java',['T','F'],'T', 'easy');
+  var question3 = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",['T','F'],'T', 'easy');
 
 //Now push all of your instances of Question into the questions Array
 
