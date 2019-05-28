@@ -10,18 +10,9 @@ function Person(name,age){
 //Now create three instances of Person with data you make up
 
   //code here
-var person1 = {
-  name: 'John',
-  age: 21,
-}
-var person2 = {
-  name: 'Doe',
-  age: 22,
-}
-var person2 = {
-  name: 'Jane',
-  age: 20,
-}
+var person1 = new Person('John', 21);
+var person2 = new Person('Jane', 22);
+var person3 = new Person('Doe', 20);
 
 
 //Now add a sayName method on your Person class that will alert the name of whatever Person instance called it.
