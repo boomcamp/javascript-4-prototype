@@ -20,6 +20,8 @@ var users = [];
 
   //code here
 users.push(new User('Aodhan','aodhan@boom.camp','iLoveJS'));
+users.push(new User('Greg','greg@boom.camp','iLovePython'));
+users.push(new User('Oscar','oscar@boom.camp','iLoveSoccer'));
 
 console.log('Aodhan\'s information is ');
 //Console.log all of Aodhan information
