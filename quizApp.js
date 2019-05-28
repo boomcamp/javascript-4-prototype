@@ -53,9 +53,17 @@ var q3 = new Question("T/F: In Javascript, == doesn't check 'type' but just the 
 //Now push all of your instances of Question into the questions Array
 
   //code here
-
+questions.push(q1);
+questions.push(q2);
+questions.push(q3);
 console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
 
   //code here
+for(a of questions){
+  console.log(a);
+}
+for(b of quizUsers){
+  console.log(b);
+}
 
