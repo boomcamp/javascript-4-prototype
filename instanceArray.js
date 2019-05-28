@@ -11,31 +11,40 @@ var User = function(name, email, pw){
   this.pw = pw;
 }
 
+
+
 //Create an Array called 'users' that will store all our instances of User.
 
   //code here
-
+  let users = [];
 
 //Now create and push into your users array 3 separate instances of User using the data from above in that exact order
 
   //code here
+  users.push(['Aodhan', 'aodhan@boom.camp', 'iLoveJS']);
+  users.push(['Greg', 'greg@boom.camp', 'iLovePython']);
+  users.push(['Oscar', 'oscar@boom.camp', 'iLoveSoccer']);
+
 
 console.log('Aodhan\'s information is ');
 //Console.log all of Aodhan information
 
   //code here
+  console.log(users.filter(user=>{return user.name === 'Aodhan'}));
 
 console.log('Oscar\'s information is ');
 //Now console.log all of Oscars information
 
   //code here
-
+  console.log(users.filter(user=>{return user.name === 'Greg'}));
 
 //Now create another instance of User using your own information and then add that to your users array.
 
   //code here
+  users.push(['Micko', 'micko.matamorosa@boom.camp', 'iLovePussyCat']);
 
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name.
 
   //code here
+  console.log(users);
