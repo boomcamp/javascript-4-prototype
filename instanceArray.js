@@ -21,7 +21,6 @@ var User = function(name, email, pw){
   users.push(new User("Aodhan", "aodhan@boom.camp", "iLoveJS"));
   users.push(new User("Greg", "greg@boom.camp", "iLovePython"));
   users.push(new User("Oscar", "oscar@boom.camp", "iLoveSoccer"));
-  console.log(users);
 
   console.log('Aodhan\'s information is ');
 //Console.log all of Aodhan information
@@ -33,17 +32,16 @@ console.log('Oscar\'s information is ');
 //Now console.log all of Oscars information
 
   //code here
-  console.log(user[2])
+  console.log(users[2]);
 
 //Now create another instance of User using your own information and then add that to your users array.
 
   //code here
   users.push(new User("Alan", "alan.alilano@boom.camp", "iLoveGames"));
-
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name.
 
   //code here
-  for(let x in users){
-
-  }
+for(let x in users){
+  console.log(users[x]);
+}
