@@ -2,7 +2,10 @@
 
   //code here
 
-
+var Person = function(name,age){
+  this.name: name,
+  this.age: age
+}
 //Now create three instances of Person with data you make up
 
   //code here
