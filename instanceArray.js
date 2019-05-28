@@ -5,37 +5,45 @@
     2) Oscar, oscar@boom.camp, 'iLoveSoccer'
 */
 
-var User = function(name, email, pw){
-  this.name = name;
-  this.email = email;
-  this.pw = pw;
+var User = function(name, email, pw) {
+    this.name = name;
+    this.email = email;
+    this.pw = pw;
 }
 
 //Create an Array called 'users' that will store all our instances of User.
 
-  //code here
-
+var users = [];
 
 //Now create and push into your users array 3 separate instances of User using the data from above in that exact order
 
-  //code here
+var aodhan = new User('Aodhan', 'aodhan@boom.camp', 'iLoveJS');
+var greg = new User('Greg', 'greg@boom.camp', 'iLovePython');
+var oscar = new User('Oscar', 'oscar@boom.camp', 'iLoveSoccer');
+
+users.push(aodhan);
+users.push(greg);
+users.push(oscar);
 
 console.log('Aodhan\'s information is ');
 //Console.log all of Aodhan information
 
-  //code here
+console.log(users.aodhan);
 
 console.log('Oscar\'s information is ');
 //Now console.log all of Oscars information
 
-  //code here
+console.log(users.oscar)
 
 
 //Now create another instance of User using your own information and then add that to your users array.
 
-  //code here
+var koji = new User('Koji', 'rolando.adriano@boom.camp', 'iLoveBoomCamp');
+users.push(koji);
 
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name.
 
-  //code here
+for (var x of user) {
+    console.log(x)
+}
