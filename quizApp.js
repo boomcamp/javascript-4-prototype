@@ -59,9 +59,9 @@
 //Now push all of your instances of Question into the questions Array
 
   //code here
-  questions.push(firstQuestion);
-  questions.push(secondQuestion);
-  questions.push(thirdQuestion);
+  questions.push(new Question(firstQuestion, 'T/F', 'T', 'easy'));
+  questions.push(new Question(secondQuestion, 'T/F', 'T', 'normal'));
+  questions.push(new Question(thirdQuestion, 'T/F', 'T', 'hard'));
 
 console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
