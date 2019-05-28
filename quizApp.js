@@ -33,11 +33,10 @@
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
-  // //code here
-  users.push(new User("Person1","p1@boom.camp","p1"));
-  users.push(new User("Person2","p2@boom.camp","p2"));
-  users.push(new User("Person3","p3@boom.camp","p3"));
-  
+  // // //code here
+  quizUsers.push(new User("Person1","p1@boom.camp","p1"));
+  quizUsers.push(new User("Person2","p2@boom.camp","p2"));
+  quizUsers.push(new User("Person3","p3@boom.camp","p3"));
 
 //Create a questions Array which is going to hold all of our questions
 
