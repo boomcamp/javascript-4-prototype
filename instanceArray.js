@@ -36,13 +36,21 @@ console.log('Oscar\'s information is ');
 //Now console.log all of Oscars information
 
   //code here
-
+  for(a of users){
+    if(a.name == 'Oscar'){ 
+    console.log(a);
+    }
+  }
 
 //Now create another instance of User using your own information and then add that to your users array.
 
   //code here
+users.push(new User('Sid','sidney.bercasio@boom.camp','iLoveSoccerToo'));
 
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name.
 
   //code here
+  for(a of users){
+    console.log(a.name);
+  }
