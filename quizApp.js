@@ -6,7 +6,12 @@
 //Create a QuizUser constructor that accepts name, email, password, and totalScore parameters and set them appropriatly
 
   //code here
-
+function QuizUser(name,email,pass,totalScore) {
+  this.name = name;
+  this.email = email;
+  this.pass = pass;
+  this.totalScore = totalScore;
+}
 
 //Create a Question constructor that accepts title, answersArray, rightAnswer, and difficulty parameters
 
