@@ -18,3 +18,6 @@ var person3 = new Person('Doe', 20);
 //Now add a sayName method on your Person class that will alert the name of whatever Person instance called it.
 
   //code here
+Person.prototype.sayName = function(){
+  alert(this.name);
+}
