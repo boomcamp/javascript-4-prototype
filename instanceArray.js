@@ -34,7 +34,6 @@ console.log('Aodhan\'s information is ');
   if (property.name === 'Aodhan')
 	console.log (property);
 	}
-  }
 
 console.log('Oscar\'s information is ');
 //Now console.log all of Oscars information
@@ -45,7 +44,6 @@ console.log('Oscar\'s information is ');
   if (property.name === 'Oscar')
 	console.log (property);
 	}
-  }
   
 //Now create another instance of User using your own information and then add that to your users array.
 
@@ -59,4 +57,3 @@ console.log('All my users names are ');
   for(property of users) {
 	console.log (property.name);
 	}
-  }
