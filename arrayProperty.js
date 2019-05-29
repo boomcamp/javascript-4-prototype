@@ -8,20 +8,27 @@
   //code here
 
   
-  function String(toReverse){
+    //code here
+ 
+  function StringtoReverse(toReverse){
     this.toReverse = toReverse;
   }
   
+  var string1 = new StringtoReverse("dianalyn");
   
-  var string1 = new String("dianalyn");
-  
-  String.prototype.reverse = function(){ 
+  StringtoReverse.prototype.reverse = function(){ 
     var toSplit = this.toReverse.split('');
-    var toRev = toSplit.reverse();
-    var toJoin = toRev.join('');
   
-    return toJoin;
+    let temp = [];
+
+    for (let c=toSplit.length-1; c>=0; c--){
+      temp.push(toSplit[c]);
+    }
+    
+    var reverseString = '';
+    reverseString = temp.join('');
+    return reverseString;
   }
-  
+  //console.log(string1.reverse());
   
   
