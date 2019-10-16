@@ -55,45 +55,11 @@ var questions = [];
 
   //code here
 
-  let question1 = {
-    title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?',
-    answersArray : 'True or False',
-    rightAnswer : 'True',
-    difficulty: 'Advance'
-  };
+  let question1 = new  Question('T/F: Inheritance is achieved in JavaScript through Prototypes?','True or False','True','Advance');
   
-  let question2 = {
-    title: 'T/F: JavaScript is just a scripting version of Java',
-    answersArray : 'True or False',
-    rightAnswer : 'False',
-    difficulty: 'Basic'
-  };
+  let question2 = new  Question('T/F: JavaScript is just a scripting version of Java','True or False','False','Basic');
 
-  let question3 = {
-    title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",
-    answersArray : 'True or False',
-    rightAnswer : 'True'   ,
-    difficulty: 'Intermediate'
-  };
-
-// questions = [{
-//   title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?',
-//   answersArray : 'True or False',
-//   rightAnswer : 'True',
-//   difficulty: 'Advance'
-// },
-// {
-//   title: 'T/F: JavaScript is just a scripting version of Java',
-//   answersArray : 'True or False',
-//   rightAnswer : 'False',
-//   difficulty: 'Basic'
-// },
-// {
-//   title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",
-//   answersArray : 'True or False',
-//   rightAnswer : 'True'   ,
-//   difficulty: 'Intermediate'
-// }]
+  let question3 = new Question("T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",'True or False','True','Intermediate');
 
 //Now push all of your instances of Question into the questions Array
 
