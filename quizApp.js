@@ -62,7 +62,9 @@ console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
 
   //code here
-  for(i in questions){
-    console.log(questions[i]["title"])
+  for(ques of questions){
+    console.log(ques)
   }
-
+  for(user of quizUsers){
+    console.log(user)
+  }
