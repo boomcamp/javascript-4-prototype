@@ -7,7 +7,6 @@
   // class String extends String{
 
   // }
-  String.prototype.reverses = function(){
-    return this.split("").reverse
-    ().join("");
+  String.prototype.reverse = function(){
+    return this.split("").reverse().join("");
   }

@@ -36,26 +36,10 @@ var quizUsers = [];
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
   //code here
-quizUsers = [
-    {
-      name: "Yow",
-      email: "jeffrey.molleno@boom.camp",
-      password: "sadlyf",
-      totalScore: ""
-    },
-    {
-      name: "Loki",
-      email: "loki@boom.camp",
-      password: "qiqil",
-      totalScore: ""
-    },
-    {
-      name: "Aquila",
-      email: "aquila@boom",
-      password: "sanaall",
-      totalScore: ""
-    }
-  ];
+
+  quizUsers.push(new QuizUser("Yow", "jeffrey.molleno@boom.camp", "sadlyf", 0 ));
+  quizUsers.push(new QuizUser("Loki", "loki@boom.camp", "qiqil", 0 ));
+  quizUsers.push(new QuizUser("Aquila", "Aquila@boom.camp", "sanaall", 0 ));
 
 
 //Create a questions Array which is going to hold all of our questions
@@ -70,29 +54,53 @@ var questions = [];
 //Fill in the rest of the required data as you see appropriate.
 
   //code here
-questions = [{
-  title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?',
-  answersArray : 'True or False',
-  rightAnswer : 'True',
-  difficulty: 'Advance'
-},
-{
-  title: 'T/F: JavaScript is just a scripting version of Java',
-  answersArray : 'True or False',
-  rightAnswer : 'False',
-  difficulty: 'Basic'
-},
-{
-  title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",
-  answersArray : 'True or False',
-  rightAnswer : 'True'   ,
-  difficulty: 'Intermediate'
-}]
+
+  let question1 = {
+    title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?',
+    answersArray : 'True or False',
+    rightAnswer : 'True',
+    difficulty: 'Advance'
+  };
+  
+  let question2 = {
+    title: 'T/F: JavaScript is just a scripting version of Java',
+    answersArray : 'True or False',
+    rightAnswer : 'False',
+    difficulty: 'Basic'
+  };
+
+  let question3 = {
+    title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",
+    answersArray : 'True or False',
+    rightAnswer : 'True'   ,
+    difficulty: 'Intermediate'
+  };
+
+// questions = [{
+//   title: 'T/F: Inheritance is achieved in JavaScript through Prototypes?',
+//   answersArray : 'True or False',
+//   rightAnswer : 'True',
+//   difficulty: 'Advance'
+// },
+// {
+//   title: 'T/F: JavaScript is just a scripting version of Java',
+//   answersArray : 'True or False',
+//   rightAnswer : 'False',
+//   difficulty: 'Basic'
+// },
+// {
+//   title: "T/F: In Javascript, == doesn't check 'type' but just the value - where === checks type and value",
+//   answersArray : 'True or False',
+//   rightAnswer : 'True'   ,
+//   difficulty: 'Intermediate'
+// }]
 
 //Now push all of your instances of Question into the questions Array
 
   //code here
-  // Question.map(ask=>questions.push(ask));
+  questions.push(question1);
+  questions.push(question2);
+  questions.push(question3);
 
 console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
