@@ -7,25 +7,51 @@
 
   //code here
 
+  class QuizUser{
+    constructor (name, email, password, totalScore){
+    this.name = name
+    this.email = email
+    this.password = password
+    this.totalScore = totalScore
+    }
+  }
+
 
 //Create a Question constructor that accepts title, answersArray, rightAnswer, and difficulty parameters
 
   //code here
 
 
+  class Question{
+    constructor (title, answersArray, rightAnswer, difficulty){
+    this.title = title
+    this.answersArray = answersArray
+    this.rightAnswer = rightAnswer
+    this.difficulty = difficulty
+    }
+  }
 //Create a quizUsers Array which is going to hold all of our users.
 
   //code here
+
+  var quizUsers = new Array ();
 
 
 //Let's say three people signed up for our service, create 3 instances of User and add each to the users Array
 
   //code here
 
+  quizUsers[0] = new QuizUser("Aodhan", "aodhan@boom.camp", "awesome", 100);
+  quizUsers[1] = new QuizUser("Greg", "greg@boom.camp", "cool", 101);
+  quizUsers[2] = new QuizUser("Oscar", "oscar@boom.camp", "nice", 102);
+
+
 
 //Create a questions Array which is going to hold all of our questions
 
   //code here
+
+  var questions = new Array ();
 
 
 //Now, let's say we wanted to create a quiz about JavaScript. Create three instances of Question which contain the following data
@@ -36,6 +62,10 @@
 
   //code here
 
+  questions.push(new Question("Inheritance is achieved in JavaScript through Prototypes?", ['T', 'F'], 'F', 1));
+  questions.push(new Question("JavaScript is just a scripting version of Java", ['T', 'F'], 'F', 1));
+  questions.push(new Question("In Javascript, == doesn't check 'type' but just the value - where === checks type and value", ['T', 'F'], 'T', 1));
+
 
 //Now push all of your instances of Question into the questions Array
 
@@ -45,4 +75,14 @@ console.log('My users Array and my questions arrray are ...');
 //Now loop console.log your users array and your questions array and verify that they're both holding the right data.
 
   //code here
+
+  for (x in quizUsers){
+    console.log(quizUsers[x].name, quizUsers[x].email, quizUsers[x].password, quizUsers[x].totalScore)
+  }
+
+  for (y in quizUsers){
+    console.log(questions[y].title, questions[y].answersArray, questions[y].rightAnswer, questions[y].difficulty)
+  }
+
+
 
