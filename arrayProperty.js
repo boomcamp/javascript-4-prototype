@@ -9,8 +9,4 @@
   // }
   String.prototype.reverse = function(){
     return this.split("").reverse().join("");
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> b222c1b9dbf19f7a108a0a3ed17afebf362c0ccc
