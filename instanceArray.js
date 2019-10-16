@@ -29,7 +29,7 @@ console.log(`Aodhan\'s information is ${users[0]["name"]}, ${users[0]["email"]},
 
   //code here
 
-console.log(`Oscar\'s information is ${users[1]["name"]}, ${users[1]["email"]}, ${users[1]["pw"]}`);
+console.log(`Oscar\'s information is ${users[2]["name"]}, ${users[2]["email"]}, ${users[2]["pw"]}`);
 //Now console.log all of Oscars information
 
   //code here
