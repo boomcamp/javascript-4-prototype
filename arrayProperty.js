@@ -7,5 +7,5 @@
     name = this
     return name.split('').reverse().join('');
   }
-  var name = "hamlet"
+  var name = "joseph"
   console.log(name.reverse())
