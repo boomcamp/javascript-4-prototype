@@ -1,4 +1,10 @@
-
+const isNode = new Function(`
+try {
+ return this === global;
+} catch (e) {
+ return false;
+}
+`);
 if (isNode()) {
   // test if file is running in a node process
   const fs = require('fs');
