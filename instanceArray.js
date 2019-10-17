@@ -29,12 +29,12 @@ console.log("Aodhan's information is ");
 //Console.log all of Aodhan information
 
 //code here
-console.log(Object.values(firstInfo));
+console.log(firstInfo);
 console.log("Oscar's information is ");
 //Now console.log all of Oscars information
 
 //code here
-console.log(Object.values(thirdInfo));
+console.log(thirdInfo);
 //Now create another instance of User using your own information and then add that to your users array.
 
 //code here
