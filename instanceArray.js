@@ -47,5 +47,5 @@ console.log('All my users names are ');
 
   //code here
 for(arr in users){
-  console.log(user[arr].name);
+  console.log(users[arr].name);
 }
