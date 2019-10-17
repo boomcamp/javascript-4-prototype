@@ -14,28 +14,38 @@ var User = function(name, email, pw){
 //Create an Array called 'users' that will store all our instances of User.
 
   //code here
-
+  var users = [];
 
 //Now create and push into your users array 3 separate instances of User using the data from above in that exact order
 
   //code here
+  let krzry = new User('Aodhan','aodhan@boom.camp','iLoveJS');
+  let zion = new User('Greg','greg@boom.camp','iLovePython');
+  let bins = new User('Oscar','oscar@boom.camp','iLoveSoccer');
 
+  users.push(krzry);
+  users.push(zion);
+  users.push(bins);
 console.log('Aodhan\'s information is ');
 //Console.log all of Aodhan information
 
   //code here
-
+  console.log(krzry);
 console.log('Oscar\'s information is ');
 //Now console.log all of Oscars information
 
   //code here
-
+  console.log(bins);
 
 //Now create another instance of User using your own information and then add that to your users array.
 
   //code here
-
+  let me = new User('Christian','christian.frecia@boom.camp','iLoveU');
+  users.push(me);
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name.
 
   //code here
+  users.forEach(element => {
+    console.log(element.name);
+  });
