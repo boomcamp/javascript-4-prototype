@@ -1,12 +1,11 @@
-const isNode = new Function(`
-  try {
-    return this === global;
-  } catch (e) {
-    return false;
-  }
-`);
-
-if (isNode()) {
+var isNode;
+if (typeof window === 'undefined') {
+    global.window = {node:true}
+    isNode = global.window.node;
+}else{
+    var isNode = false;
+}
+if (isNode) {
   // test if file is running in a node process
   const fs = require('fs');
   const path = require('path');
