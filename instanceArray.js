@@ -42,6 +42,6 @@ users.push(users[4]);
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name.
 
-for (val of users){
+for (val in users){
   console.log(val.name)
 }
