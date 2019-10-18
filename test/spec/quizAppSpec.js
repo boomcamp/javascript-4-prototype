@@ -1,16 +1,9 @@
 var isNode = ( typeof window === 'undefined' ) ? true : false ; 
 
-<<<<<<< HEAD
-if (isNode()) {
-    // test if file is running in a node process
-    const fs = require('fs');
-    const path = require('path');
-=======
 if (isNode) {
   // test if file is running in a node process
   const fs = require('fs');
   const path = require('path');
->>>>>>> 4f10f3c8677ca9a51387d881662ba9ae2e9a164b
 
     const filePath = path.resolve(__dirname, '../../'); // this should be the root dir
     fs.readdirSync(filePath) // eval all of the js files faking how a browser would execute
