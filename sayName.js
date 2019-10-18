@@ -1,3 +1,5 @@
+//Note: use var for declaring variables
+
 //Create a Person constructor that accepts name and age as parameters and sets those properties accordingly in the Constructor.
 
   //code here
