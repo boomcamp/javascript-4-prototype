@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+var isNode;
+
+if (typeof window === 'undefined') {
+    global.window = {node:true}
+    isNode = global.window.node;
+}else{
+    var isNode = false;
+}
+
+>>>>>>> 9c0c31df027eb450989ea15695bbd917d66ffcf1
 if (isNode()) {
     // test if file is running in a node process
     const fs = require('fs');
@@ -18,6 +30,7 @@ if (isNode()) {
 }
 
 describe('sayName', function() {
+<<<<<<< HEAD
     describe('Person', function() {
         it('should exist', function() {
             expect(Person).toBeDefined();
@@ -52,6 +65,40 @@ describe('sayName', function() {
                     expect(alert).toHaveBeenCalledWith('Simone Elsa');
                 });
             });
+=======
+  describe('Person', function() {
+    it('should exist', function() {
+      expect(Person).toBeDefined();
+    });
+    it('should be a function', function() {
+      expect(Person).toEqual(jasmine.any(Function));
+    });
+    it('should return an object with name and age properties when invoked with new (e.g. var person = new Person(...))', function() {
+      var person = new Person('Tester', 25);
+      expect(person.hasOwnProperty('name')).toBe(true);
+      expect(person.hasOwnProperty('age')).toBe(true);
+    });
+    describe('return object', function() {
+      it('should be an instance of Person', function() {
+        var person = new Person('Tester', 25);
+        var isPerson = person instanceof Person;
+        expect(isPerson).toBe(true);
+      });
+      it('should have access to a sayName method', function() {
+        var person = new Person('Tester', 25);
+        expect(person.sayName).toBeDefined();
+        expect(person.sayName).toEqual(jasmine.any(Function));
+      });
+      describe('sayName', function() {
+        it('should alert the name of the person on which sayName is invoked', function() {
+          var tester = new Person('Tester', 25);
+          var someoneElse = new Person('Simone Elsa', 22);
+          var consoleLog = spyOn(console, 'log');
+          tester.sayName();
+          expect(consoleLog).toHaveBeenCalledWith('Tester');
+          someoneElse.sayName();
+          expect(consoleLog).toHaveBeenCalledWith('Simone Elsa');
+>>>>>>> 9c0c31df027eb450989ea15695bbd917d66ffcf1
         });
     });
 });

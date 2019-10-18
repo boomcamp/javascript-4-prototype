@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+var isNode;
+
+if (typeof window === 'undefined') {
+    global.window = {node:true}
+    isNode = global.window.node;
+}else{
+    var isNode = false;
+}
+
+>>>>>>> 9c0c31df027eb450989ea15695bbd917d66ffcf1
 if (isNode()) {
     // test if file is running in a node process
     const fs = require('fs');
