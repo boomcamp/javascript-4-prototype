@@ -1,11 +1,4 @@
-var isNode;
-
-if (typeof window === 'undefined') {
-    global.window = {node:true}
-    isNode = global.window.node;
-}else{
-    var isNode = false;
-}
+var isNode = ( typeof window === 'undefined' ) ? true : false ; 
 
 if (isNode()) {
     // test if file is running in a node process
