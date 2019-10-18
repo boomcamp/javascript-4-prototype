@@ -1,6 +1,6 @@
 var isNode = ( typeof window === 'undefined' ) ? true : false ; 
 
-if (isNode()) {
+if (isNode) {
   // test if file is running in a node process
   const fs = require('fs');
   const path = require('path');
