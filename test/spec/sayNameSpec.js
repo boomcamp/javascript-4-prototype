@@ -1,22 +1,22 @@
 var isNode = ( typeof window === 'undefined' ) ? true : false ; 
 
 if (isNode()) {
-    // test if file is running in a node process
-    const fs = require('fs');
-    const path = require('path');
+  // test if file is running in a node process
+  const fs = require('fs');
+  const path = require('path');
 
-    const filePath = path.resolve(__dirname, '../../'); // this should be the root dir
-    fs.readdirSync(filePath) // eval all of the js files faking how a browser would execute
-        .filter(path => {
-            if (path) {
-                return /\.js$/.test(path);
-            } else {
-                return false;
-            }
-        })
-        .forEach(file => {
-            global.eval(fs.readFileSync(`${filePath}/${file}`) + '');
-        });
+  const filePath = path.resolve(__dirname, '../../'); // this should be the root dir
+  fs.readdirSync(filePath) // eval all of the js files faking how a browser would execute
+    .filter(path => {
+      if (path) {
+        return /\.js$/.test(path);
+      } else {
+        return false;
+      }
+    })
+    .forEach(file => {
+      global.eval(fs.readFileSync(`${filePath}/${file}`) + '');
+    });
 }
 
 describe('sayName', function() {
@@ -53,5 +53,7 @@ describe('sayName', function() {
           someoneElse.sayName();
           expect(consoleLog).toHaveBeenCalledWith('Simone Elsa');
         });
+      });
     });
+  });
 });
