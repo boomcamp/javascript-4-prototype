@@ -1,3 +1,4 @@
+//Note: use var for declaring variables
 /*
   Your 3 Users will be the following.
     0) Aodhan, aodhan@boom.camp, 'iLoveJS'

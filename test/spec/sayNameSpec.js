@@ -1,12 +1,6 @@
-const isNode = new Function(`
-  try {
-    return this === global;
-  } catch (e) {
-    return false;
-  }
-`);
+var isNode = ( typeof window === 'undefined' )
 
-if (isNode()) {
+if (isNode) {
   // test if file is running in a node process
   const fs = require('fs');
   const path = require('path');
@@ -53,13 +47,13 @@ describe('sayName', function() {
         it('should alert the name of the person on which sayName is invoked', function() {
           var tester = new Person('Tester', 25);
           var someoneElse = new Person('Simone Elsa', 22);
-          var alert = spyOn(window, 'alert');
+          var consoleLog = spyOn(console, 'log');
           tester.sayName();
-          expect(alert).toHaveBeenCalledWith('Tester');
+          expect(consoleLog).toHaveBeenCalledWith('Tester');
           someoneElse.sayName();
-          expect(alert).toHaveBeenCalledWith('Simone Elsa');
+          expect(consoleLog).toHaveBeenCalledWith('Simone Elsa');
         });
       });
     });
   });
-});
+}); //change was here
